@@ -1,4 +1,7 @@
 require('settings')       -- settings
 require('keymaps')        -- keymaps
 require('plugins')
-require('plugins/lualine')
+require('plugins/lualine')	
+require('plugins/lspconfig')
+require('plugins/nvimcmp')
+require('plugins/nvimtreesitter')
