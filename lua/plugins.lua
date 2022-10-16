@@ -22,14 +22,21 @@ packer.startup(function(use)
 	-- buscardor de archivos
 	
 	use { "junegunn/fzf", run = ":call fzf#install()" }
-  --use 'junegunn/fzf.vim'
+  use 'junegunn/fzf.vim'
 	use { 'ibhagwan/fzf-lua',
  
    requires = { 'kyazdani42/nvim-web-devicons' }
   }
+
 	-- easy motion
 	
 	use 'easymotion/vim-easymotion'
+
+	-- NerdTree
+	use 'preservim/nerdtree'
+
+	--icons
+	use 'ryanoasis/vim-devicons'
 
 	if install_plugins then
     packer.sync()
