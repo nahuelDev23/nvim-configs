@@ -53,12 +53,17 @@ use 'sainnhe/everforest'
 --	use 'nvim-treesitter/nvim-treesitter'
 -- necestias tener el cliente tree-sitter-cli - googlealo.
 -- si tenes un theme de mierda no te funciona 
-	    use {
+  use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate',
     }
 
+		--auto tags - auto rename tags y close {}[]""
 		use 'windwp/nvim-ts-autotag' 
+		use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
 	if install_plugins then
     packer.sync()
   end
