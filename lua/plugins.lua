@@ -86,6 +86,8 @@ use({
 -- eslint + prettier
 use 'dense-analysis/ale'
 
+-- git signs --
+use 'lewis6991/gitsigns.nvim'
 
 
 

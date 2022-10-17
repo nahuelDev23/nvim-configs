@@ -8,4 +8,4 @@ require('plugins/nvimtreesitter')
 require('plugins/nvimtsautotag')
 require('plugins/nvimautopair')
 require('plugins/nvimbufferline')
-
+require('plugins/gitsigns')
