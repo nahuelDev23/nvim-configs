@@ -24,3 +24,12 @@ map('n','<Leader>b','<cmd>Fzf buffers<cr>',{noremap=true}) --ver buffers abierto
 map('n','<Leader>n','<cmd>NERDTree<cr>',{noremap=true}) --ver buffers abiertos
 
 map('n','<Leader>s',':call feedkeys("\\<Plug>(easymotion-s)")<CR>',{noremap=true})
+
+
+--LSP SAGA 
+map('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', {noremap=true})
+map('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', {noremap=true}) -- te dice que hace una funcion nativa
+map('n', 'gh', '<Cmd>Lspsaga lsp_finder<CR>', {noremap=true}) -- te muestra donde se usa la funcion y su definicion
+map('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', {noremap=true}) -- no anda
+map('n', 'gd', '<Cmd>Lspsaga peek_definition<CR>', {noremap=true}) -- ves la definicion en un modal y podes editar o split
+map('n', 'gr', '<Cmd>Lspsaga rename<CR>', {noremap=true}) -- rename funcion xd 

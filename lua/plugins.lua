@@ -64,6 +64,24 @@ use 'sainnhe/everforest'
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
 }
+--tabs
+use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'kyazdani42/nvim-web-devicons'}
+
+
+--LSP SAGA -- defenitions preview - etc 
+use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    config = function()
+        local saga = require("lspsaga")
+
+        saga.init_lsp_saga({
+					 server_filetype_map = {
+   					 typescript = 'typescript'
+  					}
+        })
+    end,
+})
 	if install_plugins then
     packer.sync()
   end
