@@ -14,7 +14,9 @@ packer.startup(function(use)
   -- Your plugins go here
 	
 	-- Theme
-  use 'rainglow/vim'
+-- use 'rainglow/vim'
+use 'sainnhe/everforest'
+
 
 	--theme linea de modos
 	use 'nvim-lualine/lualine.nvim'
@@ -66,5 +68,6 @@ if install_plugins then
 end
 
 
-cmd('colorscheme absent')
+--cmd('colorscheme absent')
+cmd('colorscheme everforest')
 
