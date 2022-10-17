@@ -89,7 +89,10 @@ use 'dense-analysis/ale'
 -- git signs --
 use 'lewis6991/gitsigns.nvim'
 
-
+--git
+use {
+  'dinhhuy258/git.nvim'
+}
 
 
 
