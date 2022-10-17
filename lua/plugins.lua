@@ -96,6 +96,8 @@ use {
 
 
 
+use 'williamboman/mason.nvim'
+use 'williamboman/mason-lspconfig.nvim'
 
 	if install_plugins then
     packer.sync()
