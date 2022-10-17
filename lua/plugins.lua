@@ -82,6 +82,16 @@ use({
         })
     end,
 })
+
+-- eslint + prettier
+use 'dense-analysis/ale'
+
+
+
+
+
+
+
 	if install_plugins then
     packer.sync()
   end
@@ -95,4 +105,10 @@ end
 
 --cmd('colorscheme absent')
 cmd('colorscheme everforest')
+--vim.g.ale_linters = {'javascript':['eslint']} --tire error
+ vim.g.ale_sign_error = '✘'
+ vim.g.ale_sign_warning = '▲'
 
+ vim.g.ale_fix_on_save = 1
+--vim.b.ale_fixers =  ['eslint'] -- tira error
+ 
