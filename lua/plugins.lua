@@ -14,7 +14,6 @@ packer.startup(function(use)
   -- Your plugins go here
 	
 	-- Theme
--- use 'rainglow/vim'
 use 'sainnhe/everforest'
 
 
@@ -52,11 +51,14 @@ use 'sainnhe/everforest'
 	use 'onsails/lspkind.nvim'
 
 --	use 'nvim-treesitter/nvim-treesitter'
-
+-- necestias tener el cliente tree-sitter-cli - googlealo.
+-- si tenes un theme de mierda no te funciona 
 	    use {
         'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
+        run = ':TSUpdate',
     }
+
+		use 'windwp/nvim-ts-autotag' 
 	if install_plugins then
     packer.sync()
   end
