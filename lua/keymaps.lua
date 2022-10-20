@@ -42,3 +42,5 @@ map('n','<Leader>8','<Cmd>:vertical resize 80<Cr>',{noremap=true})
 --quitar resaltado de la busqueda
 
 map('n','<esc><esc>','<Cmd>:noh<return><esc><Cr>',{noremap=true})
+
+map('n','<space>/','<Cmd>:Commentary<Cr>',{noremap=true})

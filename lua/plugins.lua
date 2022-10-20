@@ -99,6 +99,10 @@ use {
 use 'williamboman/mason.nvim'
 use 'williamboman/mason-lspconfig.nvim'
 
+
+--comentarios
+use 'tpope/vim-commentary'
+
 	if install_plugins then
     packer.sync()
   end
