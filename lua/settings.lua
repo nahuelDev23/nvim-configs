@@ -16,9 +16,11 @@ opt.tabstop = 2 -- Es la cantidad de caracteres que ocupa tab, default = 8
 opt.shiftwidth = 2 -- Espacio de identacion, por convencion se usa la misma que tabstop
 opt.termguicolors= true
 opt.completeopt={'menu','menuone','noselect'}
+opt.hlsearch = true
 -- Para usar rip grep dentro de nvim
 -- Tenes que tener instalado rip-grep en el SO 
 -- https://github.com/BurntSushi/ripgrep
 cmd [[set grepprg=rg\ --vimgrep\ --smart-case\ --follow]]
+
 
 

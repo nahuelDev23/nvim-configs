@@ -39,3 +39,6 @@ map('n','<F8>','<Cmd>ALEFix eslint<CR>',{noremap=true})
 
 -- resize window
 map('n','<Leader>8','<Cmd>:vertical resize 80<Cr>',{noremap=true})
+--quitar resaltado de la busqueda
+
+map('n','<esc><esc>','<Cmd>:noh<return><esc><Cr>',{noremap=true})
